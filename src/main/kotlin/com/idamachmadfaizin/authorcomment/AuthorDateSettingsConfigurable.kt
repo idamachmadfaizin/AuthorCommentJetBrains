@@ -44,7 +44,7 @@ class AuthorDateSettingsConfigurable : Configurable {
     }
 
     override fun apply() {
-        settings.authorName = authorNameField?.text ?: "MyName"
+        settings.authorName = authorNameField?.text ?: "Author Name"
         settings.dateFormat = dateFormatField?.text ?: "EEEE, MMMM d, yyyy"
     }
 
