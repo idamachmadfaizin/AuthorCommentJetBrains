@@ -13,10 +13,16 @@ class AuthorCommentAction : AnAction() {
         val project = e.project ?: return
         val settings = AuthorCommentSettings.getInstance()
 
-        val dateFormatter = DateTimeFormatter.ofPattern(settings.dateFormat)
-        val currentDate = LocalDateTime.now().format(dateFormatter)
+        var text = "<author>${settings.authorName}</author>"
 
-        val text = "<author>${settings.authorName}</author><date>$currentDate</date>"
+        try {
+            val dateFormatter = DateTimeFormatter.ofPattern(settings.dateFormat)
+            val currentDate = LocalDateTime.now().format(dateFormatter)
+
+            text += "<date>$currentDate</date>"
+        } catch (e: Exception) {
+            text += "<date>${e.message}</date>"
+        }
 
         WriteCommandAction.runWriteCommandAction(project) {
             // Get all carets
