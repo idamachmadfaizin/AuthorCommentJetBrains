@@ -23,21 +23,21 @@
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
   <extensions defaultExtensionNs="com.intellij">
     <applicationService
-            serviceImplementation="com.idamachmadfaizin.authorcomment.AuthorDateSettings"/>
+            serviceImplementation="com.idamachmadfaizin.authorcomment.AuthorCommentSettings"/>
     <applicationConfigurable
-            instance="com.idamachmadfaizin.authorcomment.AuthorDateSettingsConfigurable"
-            id="com.idamachmadfaizin.authorcomment.settings"
-            displayName="Author Comment Settings"/>
+            id="com.idamachmadfaizin.authorcomment.AuthorCommentSettingsConfigurable"
+            instance="com.idamachmadfaizin.authorcomment.AuthorCommentSettingsConfigurable"
+            parentId="tools"
+            displayName="Author Comment"/>
   </extensions>
 
   <actions>
-    <action id="com.idamachmadfaizin.authorcomment.InsertAuthorDate"
-            class="com.idamachmadfaizin.authorcomment.AuthorDateAction"
-            text="Insert Author Date"
+    <action id="com.idamachmadfaizin.authorcomment.AuthorCommentAction"
+            class="com.idamachmadfaizin.authorcomment.AuthorCommentAction"
+            text="Insert Author and Date"
             description="Insert author and date tags">
-      <add-to-group group-id="EditMenu" anchor="last"/>
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
       <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt A"/>
     </action>
   </actions>
-
 </idea-plugin>

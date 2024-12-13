@@ -1,18 +1,18 @@
 package com.idamachmadfaizin.authorcomment
 
 import com.intellij.openapi.options.Configurable
+import java.awt.GridBagConstraints
+import java.awt.GridBagLayout
 import javax.swing.JComponent
+import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.JTextField
-import java.awt.GridBagLayout
-import java.awt.GridBagConstraints
-import javax.swing.JLabel
 
-class AuthorDateSettingsConfigurable : Configurable {
+class AuthorCommentSettingsConfigurable : Configurable {
     private var panel: JPanel? = null
     private var authorNameField: JTextField? = null
     private var dateFormatField: JTextField? = null
-    private val settings = AuthorDateSettings.getInstance()
+    private val settings = AuthorCommentSettings.getInstance()
 
     override fun createComponent(): JComponent {
         panel = JPanel(GridBagLayout())

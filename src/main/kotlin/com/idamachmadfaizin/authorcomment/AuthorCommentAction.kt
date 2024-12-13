@@ -7,11 +7,11 @@ import com.intellij.openapi.command.WriteCommandAction
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-class AuthorDateAction : AnAction() {
+class AuthorCommentAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val editor = e.getRequiredData(CommonDataKeys.EDITOR)
         val project = e.project ?: return
-        val settings = AuthorDateSettings.getInstance()
+        val settings = AuthorCommentSettings.getInstance()
 
         val dateFormatter = DateTimeFormatter.ofPattern(settings.dateFormat)
         val currentDate = LocalDateTime.now().format(dateFormatter)
