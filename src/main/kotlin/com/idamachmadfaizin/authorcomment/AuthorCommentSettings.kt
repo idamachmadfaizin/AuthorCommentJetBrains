@@ -11,7 +11,7 @@ import com.intellij.util.xmlb.XmlSerializerUtil
     storages = [Storage("authorCommentPlugin.xml")]
 )
 class AuthorCommentSettings : PersistentStateComponent<AuthorCommentSettings> {
-    var authorName: String = "AuthorName"
+    var authorName: String = "Author Name"
     var dateFormat: String = "EEEE, MMMM d, yyyy"
 
     companion object {
