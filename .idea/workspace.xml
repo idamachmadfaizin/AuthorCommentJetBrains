@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1e39ead-332d-4338-bbec-e8a288afcac7" name="Changes" comment=".idea.">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f1e39ead-332d-4338-bbec-e8a288afcac7" name="Changes" comment="refactor: Rename file to AuthorComment">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsComponent.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettings.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsConfigurable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,8 +82,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -120,7 +128,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733991208229</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".idea.">
+      <option name="closed" value="true" />
+      <created>1733991263275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733991263275</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: update default author name.">
+      <option name="closed" value="true" />
+      <created>1733991971420</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733991971420</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: Rename file to AuthorComment">
+      <option name="closed" value="true" />
+      <created>1734061133699</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734061133699</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +170,11 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Insert author and date tags." />
     <MESSAGE value=".idea." />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea." />
+    <MESSAGE value="feat: update default author name." />
+    <MESSAGE value="refactor: Rename file to AuthorComment" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Rename file to AuthorComment" />
+  </component>
+  <component name="com.github.lppedd.cc.CommitBuilderDialog">
+    <shouldRemember>false</shouldRemember>
   </component>
 </project>
