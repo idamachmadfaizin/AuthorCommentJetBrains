@@ -37,7 +37,7 @@
             text="Insert Author and Date"
             description="Insert author and date tags">
       <add-to-group group-id="ToolsMenu" anchor="last"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt A"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt I" second-keystroke="alt A"/>
     </action>
   </actions>
 </idea-plugin>
