@@ -10,18 +10,18 @@ import com.intellij.util.xmlb.XmlSerializerUtil
     name = "AuthorCommentSettings",
     storages = [Storage("authorCommentPlugin.xml")]
 )
-class AuthorCommentSettings : PersistentStateComponent<AuthorCommentSettings> {
+class Settings : PersistentStateComponent<Settings> {
     var authorName: String = "Author Name"
     var dateFormat: String = "EEEE, MMMM d, yyyy"
 
     companion object {
-        fun getInstance(): AuthorCommentSettings =
-            ApplicationManager.getApplication().getService(AuthorCommentSettings::class.java)
+        fun getInstance(): Settings =
+            ApplicationManager.getApplication().getService(Settings::class.java)
     }
 
-    override fun getState(): AuthorCommentSettings = this
+    override fun getState(): Settings = this
 
-    override fun loadState(state: AuthorCommentSettings) {
+    override fun loadState(state: Settings) {
         XmlSerializerUtil.copyBean(state, this)
     }
 }

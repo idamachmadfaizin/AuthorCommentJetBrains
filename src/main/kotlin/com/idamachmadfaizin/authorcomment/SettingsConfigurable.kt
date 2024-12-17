@@ -6,16 +6,13 @@ import com.intellij.openapi.options.Configurable
 import com.intellij.ui.DocumentAdapter
 import com.intellij.ui.components.JBTextField
 import com.intellij.util.ui.FormBuilder
-import java.time.LocalDate
 import javax.swing.JComponent
 import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.event.DocumentEvent
 import javax.swing.event.DocumentListener
 
-val DATE_PREVIEW: LocalDate = LocalDate.of(LocalDate.now().year, 1, 31)
-
-class AuthorCommentSettingsConfigurable : Configurable {
+class SettingsConfigurable : Configurable {
     private val authorNameLabel: JLabel = JLabel("Author Name:")
     private val authorNameField: JBTextField
     private val dateFormatLabel: DateFormatLabel = DateFormatLabel("Date Format:")
@@ -23,16 +20,16 @@ class AuthorCommentSettingsConfigurable : Configurable {
     private val dateFormatPreview: JLabel
     private val onChangedDateFormatField: DocumentListener
 
-    private val settings = AuthorCommentSettings.getInstance()
+    private val settings = Settings.getInstance()
 
     init {
         authorNameField = JBTextField(settings.authorName)
         dateFormatField = JBTextField(settings.dateFormat)
-        dateFormatPreview = JLabel(DATE_PREVIEW.format(dateFormatField.text))
+        dateFormatPreview = JLabel(SettingsConstants.DATE_PREVIEW.format(dateFormatField.text))
 
         onChangedDateFormatField = object : DocumentAdapter() {
             override fun textChanged(e: DocumentEvent) {
-                dateFormatPreview.text = DATE_PREVIEW.format(dateFormatField.text)
+                dateFormatPreview.text = SettingsConstants.DATE_PREVIEW.format(dateFormatField.text)
             }
         }
         dateFormatField.document.addDocumentListener(onChangedDateFormatField)
