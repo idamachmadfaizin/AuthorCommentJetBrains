@@ -23,21 +23,32 @@
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
   <extensions defaultExtensionNs="com.intellij">
     <applicationService
-            serviceImplementation="com.idamachmadfaizin.authorcomment.AuthorCommentSettings"/>
+            serviceImplementation="com.idamachmadfaizin.authorcomment.Settings"/>
     <applicationConfigurable
-            id="com.idamachmadfaizin.authorcomment.AuthorCommentSettingsConfigurable"
-            instance="com.idamachmadfaizin.authorcomment.AuthorCommentSettingsConfigurable"
+            id="com.idamachmadfaizin.authorcomment.SettingsConfigurable"
+            instance="com.idamachmadfaizin.authorcomment.SettingsConfigurable"
             parentId="tools"
             displayName="Author Comment"/>
   </extensions>
 
   <actions>
-    <action id="com.idamachmadfaizin.authorcomment.AuthorCommentAction"
-            class="com.idamachmadfaizin.authorcomment.AuthorCommentAction"
-            text="Insert Author and Date"
-            description="Insert author and date tags">
+    <group id="com.idamachmadfaizin.authorcomment.actions"
+           text="Author Comment"
+           description="The author comment group">
       <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </group>
+    <action id="com.idamachmadfaizin.authorcomment.actions.InsertAuthorAction"
+            class="com.idamachmadfaizin.authorcomment.actions.InsertAuthorAction"
+            text="Insert Author"
+            description="Insert author tag">
+      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="alt I" second-keystroke="alt A"/>
+    </action>
+    <action id="com.idamachmadfaizin.authorcomment.actions.InsertDateAction"
+            class="com.idamachmadfaizin.authorcomment.actions.InsertDateAction" text="Insert Date"
+            description="Insert date tag">
+      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt I" second-keystroke="alt D"/>
     </action>
   </actions>
 </idea-plugin>
