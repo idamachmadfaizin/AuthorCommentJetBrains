@@ -1,38 +1,39 @@
 plugins {
   id("java")
-  id("org.jetbrains.kotlin.jvm") version "1.9.25"
-  id("org.jetbrains.intellij") version "1.17.4"
+  id("org.jetbrains.kotlin.jvm") version "2.1.0"
+  id("org.jetbrains.intellij.platform") version "2.2.1"
 }
 
-group = "com.idamachmadfaizin"
-version = "1.0-SNAPSHOT"
+group = property("pluginGroup").toString()
+version = property("pluginVersion").toString()
 
 repositories {
   mavenCentral()
+
+  intellijPlatform {
+    defaultRepositories()
+    localPlatformArtifacts()
+  }
 }
 
-// Configure Gradle IntelliJ Plugin
-// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
-intellij {
-  version.set("2023.2.8")
-  type.set("IC") // Target IDE Platform
-
-  plugins.set(listOf(/* Plugin Dependencies */))
+dependencies {
+  // Configure Gradle IntelliJ Plugin
+  // Read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html
+  intellijPlatform {
+    local(providers.gradleProperty("platformPath"))
+  }
 }
 
 tasks {
   // Set the JVM compatibility versions
   withType<JavaCompile> {
-    sourceCompatibility = "17"
-    targetCompatibility = "17"
-  }
-  withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
+    sourceCompatibility = property("javaVersion").toString()
+    targetCompatibility = property("javaVersion").toString()
   }
 
   patchPluginXml {
-    sinceBuild.set("232")
-    untilBuild.set("242.*")
+    sinceBuild.set(providers.gradleProperty("patchPluginSinceBuild"))
+    untilBuild.set(providers.gradleProperty("patchPluginUntilBuild"))
   }
 
   signPlugin {
