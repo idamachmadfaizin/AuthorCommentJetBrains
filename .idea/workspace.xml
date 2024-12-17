@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1e39ead-332d-4338-bbec-e8a288afcac7" name="Changes" comment="refactor: Rename file to AuthorComment">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsComponent.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f1e39ead-332d-4338-bbec-e8a288afcac7" name="Changes" comment="chore: delete gradle.properties.">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettings.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/idamachmadfaizin/authorcomment/AuthorCommentSettingsConfigurable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties.example" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties.example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +28,33 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
-          <activation>
-            <after_sync>
-              <task name="setupDependencies" />
-            </after_sync>
-          </activation>
+          <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AuthorComment" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AuthorComment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -78,15 +85,56 @@
   "keyToString": {
     "Gradle.AuthorComment [setupDependencies].executor": "Run",
     "Gradle.Build AuthorComment.executor": "Run",
+    "Gradle.Build jetbrains_AuthorComment.executor": "Run",
     "Gradle.Run Plugin.executor": "Run",
+    "Gradle.jetbrains_AuthorComment [buildPlugin].executor": "Run",
+    "Gradle.jetbrains_AuthorComment [setupDependencies].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "/home/idam/Development/Try/jetbrains_AuthorComment",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.idamachmadfaizin.authorcomment.actions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Run Plugin">
+    <configuration name="jetbrains_AuthorComment [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.jetbrains_AuthorComment [buildPlugin]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -152,7 +200,71 @@
       <option name="project" value="LOCAL" />
       <updated>1734061133699</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: create AnActionEvent.writeCommandAction extension.">
+      <option name="closed" value="true" />
+      <created>1734454896841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734454896841</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: create SettingsConstants.">
+      <option name="closed" value="true" />
+      <created>1734454973522</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734454973522</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: use SettingsConstants.">
+      <option name="closed" value="true" />
+      <created>1734455024236</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455024236</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: remove DialogTitleCapitalization in DateFormatLabel.kt.">
+      <option name="closed" value="true" />
+      <created>1734455051996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455051996</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Separate Insert author and date actions.">
+      <option name="closed" value="true" />
+      <created>1734455088571</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455088571</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: update plugin.xml.">
+      <option name="closed" value="true" />
+      <created>1734455103217</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455103217</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore: update .gitignore and add gradle.properties.example.">
+      <option name="closed" value="true" />
+      <created>1734455129147</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455129147</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chore: delete gradle.properties.">
+      <option name="closed" value="true" />
+      <created>1734455235529</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734455235529</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +284,15 @@
     <MESSAGE value=".idea." />
     <MESSAGE value="feat: update default author name." />
     <MESSAGE value="refactor: Rename file to AuthorComment" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Rename file to AuthorComment" />
+    <MESSAGE value="feat: create AnActionEvent.writeCommandAction extension." />
+    <MESSAGE value="feat: create SettingsConstants." />
+    <MESSAGE value="feat: use SettingsConstants." />
+    <MESSAGE value="fix: remove DialogTitleCapitalization in DateFormatLabel.kt." />
+    <MESSAGE value="feat: Separate Insert author and date actions." />
+    <MESSAGE value="fix: update plugin.xml." />
+    <MESSAGE value="chore: update .gitignore and add gradle.properties.example." />
+    <MESSAGE value="chore: delete gradle.properties." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: delete gradle.properties." />
   </component>
   <component name="com.github.lppedd.cc.CommitBuilderDialog">
     <shouldRemember>false</shouldRemember>
