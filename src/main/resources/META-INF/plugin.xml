@@ -32,22 +32,23 @@
   </extensions>
 
   <actions>
-    <group id="com.idamachmadfaizin.authorcomment.actions"
+    <group id="com.idamachmadfaizin.authorcomment.actions.AuthorCommentGroup"
            text="Author Comment"
-           description="The author comment group">
+           popup="true">
       <add-to-group group-id="ToolsMenu" anchor="last"/>
     </group>
     <action id="com.idamachmadfaizin.authorcomment.actions.InsertAuthorAction"
             class="com.idamachmadfaizin.authorcomment.actions.InsertAuthorAction"
             text="Insert Author"
             description="Insert author tag">
-      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions" anchor="first"/>
+      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions.AuthorCommentGroup"/>
       <keyboard-shortcut keymap="$default" first-keystroke="alt I" second-keystroke="alt A"/>
     </action>
     <action id="com.idamachmadfaizin.authorcomment.actions.InsertDateAction"
-            class="com.idamachmadfaizin.authorcomment.actions.InsertDateAction" text="Insert Date"
+            class="com.idamachmadfaizin.authorcomment.actions.InsertDateAction"
+            text="Insert Date"
             description="Insert date tag">
-      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions" anchor="last"/>
+      <add-to-group group-id="com.idamachmadfaizin.authorcomment.actions.AuthorCommentGroup"/>
       <keyboard-shortcut keymap="$default" first-keystroke="alt I" second-keystroke="alt D"/>
     </action>
   </actions>
