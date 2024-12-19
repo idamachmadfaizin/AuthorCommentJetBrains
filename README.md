@@ -1,7 +1,8 @@
 # Author Date Plugin for JetBrains IDEs
 
 ## Features
-- Insert author and date tags with a keyboard shortcut (Ctrl+Alt+A).
+- Insert author tag with a keyboard shortcut (Alt+I, Alt+A).
+- Insert date tag with a keyboard shortcut (Alt+I, Alt+D).
 - Configurable author name and date format.
 - Works with IntelliJ IDEA, PyCharm, WebStorm, and other JetBrains IDEs.
 
@@ -10,13 +11,15 @@
 2. Install via Settings > Plugins > Install from Disk.
 
 ## Configuration
-- Go to Settings > Author Comment Settings.
+- Go to Settings > Tools > Author Comment Settings.
 - Set your preferred author name.
 - Customize the date format using Java's DateTimeFormatter patterns.
 
 ## Keyboard Shortcut
-- Default: Ctrl+Alt+A
-- Inserts `<author>AuthorName</author><date>Formatted Date</date>` at the cursors position
+- Default: Alt+I, Alt+A
+  Insert `<author>AuthorName</author>` at the cursors position
+- Default: Alt+I, Alt+D
+  Insert `<date>EEEE, MMMM d, yyyy</date>`
 
 ## Date Format Examples
 - `EEEE, MMMM d, yyyy` - Friday, December 6, 2024
